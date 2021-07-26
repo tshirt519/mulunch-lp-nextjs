@@ -8,9 +8,15 @@ export const Top = () => {
         src="/TV-6.jpg"
         alt="top visual"
         width={1680}
-        height={1100}
-        className={styles.Image}
+        height={1074}
+        objectPosition="center"
+        objectFit="cover"
       ></Image>
+
+      <div className={styles.div}>
+        <p>SCROLL</p>
+        <p>↓</p>
+      </div>
     </section>
   );
 };
