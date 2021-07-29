@@ -16,8 +16,8 @@ export const Village = () => {
         <Image
           src="/uenomurabg1-3.png"
           alt="ueno village"
-          width={1400}
-          height={600}
+          width={2800}
+          height={1200}
         />
         <details>
           <summary>
@@ -69,6 +69,7 @@ export const Village = () => {
           </p>
         </details>
       </div>
+      <div className={styles.transition}></div>
     </section>
   );
 };
