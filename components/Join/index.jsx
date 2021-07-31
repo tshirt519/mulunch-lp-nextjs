@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export const Join = () => {
   return (
-    <section className={styles.section}>
+    <section id="join" className={styles.section}>
       <div className={styles.heading}>
         <div>
           <h2>JOIN</h2>
@@ -46,8 +46,8 @@ export const Join = () => {
         </div>
         <textarea
           name="contact"
-          cols="150"
-          rows="15"
+          cols="160"
+          rows="16"
           placeholder="お問い合わせ内容"
         ></textarea>
         <input type="submit" value="送信" />
