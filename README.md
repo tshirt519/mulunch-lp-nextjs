@@ -10,7 +10,7 @@ HTML, CSS, Javasctriptで作成したものをReact(Next.js)で書き換えま�
   
 ## ランディングページ（2021年7月）  
 <img width="1680" alt="スクリーンショット 2021-07-31 15 02 24" src="https://user-images.githubusercontent.com/66429478/127730492-b1b3b043-7bfb-4554-a09f-c40d4883ce3a.png">
-
+<img width="1680" alt="スクリーンショット 2021-05-18 23 02 06" src="https://user-images.githubusercontent.com/66429478/118669761-fc8d6d00-b830-11eb-9b4d-4d0b6462d219.png">
   
 企画やデザインの段階から、コミュニティのメンバーから意見をもらいながら進めていきました。  
 画像編集はIllustratorやPhotoshopを使用し、コンポーネントごとにコーディング、
