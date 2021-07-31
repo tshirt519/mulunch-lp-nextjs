@@ -1,35 +1,47 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Mulunch Landing Page
+こんにちは。このリポジトリでは、日本全国の「村」について楽しく学べるコミュニティ  
+むらんちのランディングページを掲載しています。ポートフォリオとして作成しています。
+HTML, CSS, Javasctriptで作成したものをReact(Next.js)で書き換えました。
+  
+現在Vercelで公開しています。
+ランディングページ -> (https://mulunch-lp-nextjs.vercel.app/）  
+ブログサイト -> (https://mulunchblog2.herokuapp.com/posts/index)
+  
+## ランディングページ（2021年7月）  
+<img width="1680" alt="スクリーンショット 2021-05-18 23 01 05" src="https://user-images.githubusercontent.com/66429478/118668365-c3083200-b82f-11eb-8c8c-647ec0369b2a.png">
+<img width="1680" alt="スクリーンショット 2021-05-18 23 02 06" src="https://user-images.githubusercontent.com/66429478/118669761-fc8d6d00-b830-11eb-9b4d-4d0b6462d219.png">
+  
+企画やデザインの段階から、コミュニティのメンバーから意見をもらいながら進めていきました。  
+画像編集はIllustratorやPhotoshopを使用し、コンポーネントごとにコーディング、
+スタイリングをして、仲間から貰ったデザイン案に可能な限り近づけるように制作しました。　　
+  
+レスポンシブのデザインカンプは制作していませんでしたが、flexを解除していく形で行いました。  
+Javascriptの理解のため、一部APIやオブジェクトのデータのやりとりや、DOM操作をして描画しています。　　
+（こちらのリポジトリではレスポンシブ対応は現在実装中です。）
+  
+画像の加工からフルスクラッチに挑戦したことでまだまだ粗い点は残っていますが、  
+このサイトの目的とする、むらんちへの参加に興味を持ってもらうという意味では  
+なんとか最低限の品質が確保できたのではないかと判断し、次の技術に進むことにしました。  
+  
+## バージョン情報
+- next: "11.0.1"
+- react: "17.0.2"
+- AWS S3
 
-## Getting Started
+## Component
+1. Header
+2. Top
+3. Concept
+4. Project
+5. Topics
+6. Village
+7. Lunch
+8. Access
+9. Gallery
+10. Join
+11. Footer
 
-First, run the development server:
+ここまでご覧いただきまして、ありがとうございました。  
 
-```bash
-npm run dev
-# or
-yarn dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
-
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
-
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# mulunch-lp-nextjs
+（むらんちの活動にご興味がございましたら、ページのフォームからぜひ問い合わせを！）　　
+<img width="1680" alt="スクリーンショット 2021-06-02 17 45 27" src="https://user-images.githubusercontent.com/66429478/120449447-63cb2580-c3ca-11eb-9328-595cde1be8b5.png">
