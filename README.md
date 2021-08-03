@@ -2,7 +2,7 @@
 こんにちは。このリポジトリでは、日本全国の「村」について楽しく学べるコミュニティ  
 むらんちのランディングページを掲載しています。ポートフォリオとして作成しています。  
 HTML, CSS, Javasctriptで作成したものをReact(Next.js)で書き換えました。  
-ブログサイトはRuby on Railsで開発し、ReactでViewを書き換えています。  
+ブログサイトはRuby on Railsで開発し、ReactでViewを書き換えているところです。  
   
 現在Vercelで公開しています。  
 ランディングページ -> https://mulunch-lp-nextjs.vercel.app/  
