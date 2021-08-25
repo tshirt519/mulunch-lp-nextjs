@@ -44,12 +44,12 @@
   text-align: center;
 }
 .overlay li {
-  margin: 50px;
-  font-size: 50px;
+  margin: 30px;
+  font-size: 30px;
 }
 .overlay img {
-  width: 200px;
-  height: 100px;
+  width: 150px;
+  height: 75px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -64,6 +64,14 @@
   } 
   .barmenu:hover {
     opacity: 0.5;
+  }
+  .overlay li {
+    margin: 30px;
+    font-size: 30px;
+  }
+  .overlay img {
+    width: 150px;
+    height: 75px;
   }
 }
 
