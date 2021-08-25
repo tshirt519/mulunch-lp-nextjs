@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
-import { GrClose } from "react-icons/gr";
 import Image from "next/image";
 
 export const BlogOverlay = (props) => {

@@ -2,7 +2,6 @@ import React from "react";
 import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
-import { GrClose } from "react-icons/gr";
 import Image from "next/image";
 
 export const Overlay = (props) => {
@@ -16,13 +15,13 @@ export const Overlay = (props) => {
         <div className={styles.overlay} onClick={closeOverlay}>
           <nav>
             <h1 className={styles.logo}>
-              <Link href="/blog">
+              <Link href="/">
                 <a className={styles.a}>
                   <Image
                     src="/mulunch_logo.png"
                     alt="mulunch logo"
-                    width={120}
-                    height={60}
+                    width={300}
+                    height={150}
                   />
                 </a>
               </Link>
