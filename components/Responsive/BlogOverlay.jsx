@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
+import { GoThreeBars } from "react-icons/go";
 
 export const BlogOverlay = (props) => {
   const closeOverlay = () => {
@@ -12,19 +13,24 @@ export const BlogOverlay = (props) => {
     <div>
       {props.showFlag ? (
         <div className={styles.overlay} onClick={closeOverlay}>
-          <nav>
+          <div className={styles.close_button}>
             <h1 className={styles.logo}>
               <Link href="/blog">
                 <a className={styles.a}>
                   <Image
                     src="/mulunch_logo.png"
                     alt="mulunch logo"
-                    width={120}
-                    height={60}
+                    width={80}
+                    height={40}
                   />
                 </a>
               </Link>
             </h1>
+            <button onClick={closeOverlay}>
+              <GoThreeBars size={40} className={styles.barmenu} />
+            </button>
+          </div>
+          <nav>
             <ul>
               <li className={styles.li}>
                 <Link href="/">
@@ -67,9 +73,6 @@ export const BlogOverlay = (props) => {
                 </Link>
               </li>
             </ul>
-            {/* <button className={styles.closeButton} onClick={closeOverlay}>
-              <GrClose size={50} />
-            </button> */}
           </nav>
         </div>
       ) : null}

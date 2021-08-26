@@ -27,9 +27,6 @@
   right: 0;
   z-index: 10;
   background: rgba(255, 255, 255, 0.9);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   animation: opacity 0.5s ease 0s 1 alternate none running;
 }
 @keyframes opacity {
@@ -40,6 +37,19 @@
     opacity: 1;
   }
 }
+.logo:hover {
+  opacity: 0.5;
+}
+.close_button {
+  height: 75px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+}
+.list_margin {
+  height: 30px;
+}
 .overlay nav {
   text-align: center;
 }
@@ -47,9 +57,8 @@
   margin: 30px;
   font-size: 30px;
 }
-.overlay img {
-  width: 150px;
-  height: 75px;
+.overlay li:hover {
+  opacity: 0.5;
 }
 
 @media screen and (max-width: 1200px) {
@@ -69,10 +78,6 @@
     margin: 30px;
     font-size: 30px;
   }
-  .overlay img {
-    width: 150px;
-    height: 75px;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -80,8 +85,4 @@
     margin: 75px;
     font-size: 75px;
   }
-  .overlay img {
-    width: 300px;
-    height: 150px;
-  } 
 }

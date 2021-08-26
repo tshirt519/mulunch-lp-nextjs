@@ -3,6 +3,7 @@ import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
 import Image from "next/image";
+import { GoThreeBars } from "react-icons/go";
 
 export const Overlay = (props) => {
   const closeOverlay = () => {
@@ -13,20 +14,26 @@ export const Overlay = (props) => {
     <div>
       {props.showFlag ? (
         <div className={styles.overlay} onClick={closeOverlay}>
-          <nav>
+          <div className={styles.close_button}>
             <h1 className={styles.logo}>
               <Link href="/">
                 <a className={styles.a}>
                   <Image
                     src="/mulunch_logo.png"
                     alt="mulunch logo"
-                    width={300}
-                    height={150}
+                    width={80}
+                    height={40}
                   />
                 </a>
               </Link>
             </h1>
+            <button onClick={closeOverlay}>
+              <GoThreeBars size={40} className={styles.barmenu} />
+            </button>
+          </div>
+          <nav>
             <ul>
+              <div className={styles.list_margin}></div>
               <li className={styles.li}>
                 <Scroll to="concept" smooth={true} duration={1000} offset={-50}>
                   <a className={styles.a}>CONCEPT</a>
@@ -73,9 +80,6 @@ export const Overlay = (props) => {
                 </Link>
               </li>
             </ul>
-            {/* <button className={styles.closeButton} onClick={closeOverlay}>
-              <GrClose size={50} />
-            </button> */}
           </nav>
         </div>
       ) : null}
