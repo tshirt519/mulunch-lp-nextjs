@@ -28,8 +28,15 @@ Reactの理解のため、APIやオブジェクトのデータのやりとりを
 - next: "11.0.1"
 - react: "17.0.2"
 - AWS S3
-
-## Component
+- Tailwind CSS @2.2.7
+  
+## Pages / Component
+  
+- Pages
+1. Index(Home) Landing Page  
+2. Blog  
+  
+-　Component
 1. Header
 2. Top
 3. Concept
@@ -41,5 +48,6 @@ Reactの理解のため、APIやオブジェクトのデータのやりとりを
 9. Gallery
 10. Join
 11. Footer
+12. Responsive
 
 ここまでご覧いただきまして、ありがとうございました。  
