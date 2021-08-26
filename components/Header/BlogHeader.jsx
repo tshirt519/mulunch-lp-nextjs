@@ -1,5 +1,6 @@
 import styles from "../Header/Header.module.css";
 import Image from "next/image";
+import { Link as Scroll } from "react-scroll";
 import Link from "next/link";
 import { IoLogoTwitter, IoLogoInstagram, IoLogoFacebook } from "react-icons/io";
 import { BlogHeader as ResponsiveHeader } from "/components/Responsive/BlogHeader";
@@ -11,16 +12,14 @@ export const BlogHeader = () => {
         <nav className={styles.nav}>
           <ul className={styles.ul}>
             <h1 className={styles.logo}>
-              <Link href="/blog">
-                <a className={styles.a}>
-                  <Image
-                    src="/mulunch_logo.png"
-                    alt="mulunch logo"
-                    width={120}
-                    height={60}
-                  />
-                </a>
-              </Link>
+              <Scroll to="blogTop" smooth={true} className={styles.logo}>
+                <Image
+                  src="/mulunch_logo.png"
+                  alt="mulunch logo"
+                  width={180}
+                  height={90}
+                />
+              </Scroll>
             </h1>
             <li className={styles.li}>
               <Link href="/">

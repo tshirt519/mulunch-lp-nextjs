@@ -1,7 +1,7 @@
 .section {
+  padding: 100px 0 0;
   height: 800px;
   width: 100%;
-  margin-bottom: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +27,4 @@
 
 /* レスポンシブ */
 @media screen and (max-width: 1200px) {
-  .section {
-    margin-top: 75px;
-  }
 }

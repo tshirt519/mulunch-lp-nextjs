@@ -1,6 +1,6 @@
 import Head from "next/head";
 import styles from "/styles/Blog.module.css";
-import { Footer } from "/components/Footer";
+import { BlogFooter } from "/components/Footer/BlogFooter";
 import { BlogHeader } from "/components/Header/BlogHeader";
 import Image from "next/image";
 import Link from "next/link";
@@ -19,7 +19,7 @@ export default function Blog() {
 
       <BlogHeader />
       <main className={styles.container}>
-        <section className={styles.section}>
+        <section id="blogTop" className={styles.section}>
           <article>
             <div className={styles.article_main}>
               <div className={styles.article_thumbnail}>
@@ -63,7 +63,7 @@ export default function Blog() {
           </article>
         </section>
       </main>
-      <Footer />
+      <BlogFooter />
     </div>
   );
 }
