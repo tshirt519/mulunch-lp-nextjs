@@ -30,13 +30,13 @@ Reactの理解のため、APIやオブジェクトのデータのやりとりを
 - AWS S3
 - Tailwind CSS @2.2.7
   
-## Pages / Component
+## Pages / Components
   
 - Pages
 1. Index(Home) Landing Page  
 2. Blog  
   
--　Component
+- Components
 1. Header
 2. Top
 3. Concept
