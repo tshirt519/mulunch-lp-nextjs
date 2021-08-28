@@ -26,6 +26,7 @@ module.exports = {
         mulunchOrange: "#ea9044",
         // default color => #de9044
         mulunchGray: "#6e6d6e",
+        mulunchYellow: "#f3e9bb",
       },
       screens: {
         sp: { max: "640px" },
