@@ -15,18 +15,20 @@ module.exports = {
     },
     extend: {
       saturate: {
-        400: '400%',
+        400: "400%",
       },
       invert: {
-        30: '.3',
-        50: '.5',
-        75: '.75',
+        30: ".3",
+        50: ".5",
+        75: ".75",
       },
       colors: {
+        mulunchKhaki: "#F7F5F1",
         mulunchOrange: "#ea9044",
         // default color => #de9044
         mulunchGray: "#6e6d6e",
         mulunchYellow: "#f3e9bb",
+        mulunchGreen: "#e1ddcb",
       },
       screens: {
         sp: { max: "640px" },
@@ -37,6 +39,7 @@ module.exports = {
       },
       backgroundImage: (theme) => ({
         topVisual: "url('/TV-6.jpg')",
+        vlSection: "url('/village-lunch-section3.png')",
       }),
     },
   },
