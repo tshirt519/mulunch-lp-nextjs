@@ -1,4 +1,3 @@
-import styles from "../Topic/Topic.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowDropleft, IoIosArrowDropright } from "react-icons/io";
@@ -59,62 +58,66 @@ export const Topic = ({ topic }) => {
   };
 
   return (
-    <section id="topic" className={styles.section}>
+    <section id="topic" className="pt-24 text-mulunchGray text-center">
       <p>最新のお知らせ</p>
-      <h3>TOPICS</h3>
-      <div>
-        <ul className={styles.ul}>
-          <button className={styles.prev} onClick={prevSlide}>
-            <IoIosArrowDropleft size={24} />
-          </button>
-          {topics.map((topic, index) => (
-            <li key={index}>
-              {index === current && (
-                <div className={styles.ul}>
-                  <article>
-                    <Image
-                      src={topic.image1}
-                      width={300}
-                      height={300}
-                      alt="topics image"
-                    />
-                    <p>{topic.title1}</p>
-                  </article>
-                  <article>
-                    <Image
-                      src={topic.image2}
-                      width={300}
-                      height={300}
-                      alt="topics image"
-                    />
-                    <p>{topic.title2}</p>
-                  </article>
-                  <article>
-                    <Image
-                      src={topic.image3}
-                      width={300}
-                      height={300}
-                      alt="topics image"
-                    />
-                    <p>{topic.title3}</p>
-                  </article>
-                  <article>
-                    <Image
-                      src={topic.image4}
-                      width={300}
-                      height={300}
-                      alt="topics image"
-                    />
-                    <p>{topic.title4}</p>
-                  </article>
-                </div>
-              )}
-            </li>
-          ))}
-          <button className={styles.next} onClick={nextSlide}>
-            <IoIosArrowDropright size={24} />
-          </button>
-        </ul>
+      <h2 className="text-5xl">TOPICS</h2>
+
+      <div className="flex justify-center items-center mt-8 px-8">
+        <button
+          className="mx-auto p-2 rounded-full border bg-white font-bold text-mulunchGray shadow cursor-pointer hover:opacity-40"
+          onClick={prevSlide}
+        >
+          <IoIosArrowDropleft size={36} />
+        </button>
+        {topics.map(
+          (topic, index) =>
+            index === current && (
+              <div className="flex justify-center items-top">
+                <article className="flex-1 cursor-pointer hover:opacity-40">
+                  <Image
+                    src={topic.image1}
+                    width={300}
+                    height={300}
+                    alt="topics image"
+                  />
+                  <p>{topic.title1}</p>
+                </article>
+                <article className="flex-1 cursor-pointer hover:opacity-40">
+                  <Image
+                    src={topic.image2}
+                    width={300}
+                    height={300}
+                    alt="topics image"
+                  />
+                  <p>{topic.title2}</p>
+                </article>
+                <article className="flex-1 cursor-pointer hover:opacity-40">
+                  <Image
+                    src={topic.image3}
+                    width={300}
+                    height={300}
+                    alt="topics image"
+                  />
+                  <p>{topic.title3}</p>
+                </article>
+                <article className="flex-1 cursor-pointer hover:opacity-40">
+                  <Image
+                    src={topic.image4}
+                    width={300}
+                    height={300}
+                    alt="topics image"
+                  />
+                  <p>{topic.title4}</p>
+                </article>
+              </div>
+            )
+        )}
+        <button
+          className="mx-auto p-2 rounded-full border-2 bg-white font-bold text-mulunchGray shadow cursor-pointer hover:opacity-40"
+          onClick={nextSlide}
+        >
+          <IoIosArrowDropright size={36} />
+        </button>
       </div>
     </section>
   );

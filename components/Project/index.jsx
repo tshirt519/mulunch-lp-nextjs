@@ -11,10 +11,10 @@ export const Project = () => {
       </div>
       <div className="mt-8 ml-56">
         <h3 className="text-2xl">村と私たちができることを、楽しく！</h3>
-        <p className="mt-8 text-md">
+        <p className="mt-8">
           活動の大きな柱として、応援したいむらを見つけ、都心で”食の発信”をしています。
         </p>
-        <p className="mt-2 text-md">他にむらとつながりながら、田舎体験や観光などを楽しんでいます。</p>
+        <p className="mt-2">他にむらとつながりながら、田舎体験や観光などを楽しんでいます。</p>
       </div>
 
       <div className="mt-12 grid grid-cols-3 px-20 text-center">
