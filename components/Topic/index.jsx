@@ -80,7 +80,7 @@ export const Topic = ({ topic }) => {
                     height={300}
                     alt="topics image"
                   />
-                  <p>{topic.title1}</p>
+                  <p className="px-6">{topic.title1}</p>
                 </article>
                 <article className="flex-1 cursor-pointer hover:opacity-40">
                   <Image
@@ -89,7 +89,7 @@ export const Topic = ({ topic }) => {
                     height={300}
                     alt="topics image"
                   />
-                  <p>{topic.title2}</p>
+                  <p className="px-6">{topic.title2}</p>
                 </article>
                 <article className="flex-1 cursor-pointer hover:opacity-40">
                   <Image
@@ -98,7 +98,7 @@ export const Topic = ({ topic }) => {
                     height={300}
                     alt="topics image"
                   />
-                  <p>{topic.title3}</p>
+                  <p className="px-6">{topic.title3}</p>
                 </article>
                 <article className="flex-1 cursor-pointer hover:opacity-40">
                   <Image
@@ -107,7 +107,7 @@ export const Topic = ({ topic }) => {
                     height={300}
                     alt="topics image"
                   />
-                  <p>{topic.title4}</p>
+                  <p className="px-6">{topic.title4}</p>
                 </article>
               </div>
             )
