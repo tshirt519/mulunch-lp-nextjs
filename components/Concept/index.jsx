@@ -22,7 +22,7 @@ export const Concept = () => {
           <p className="mt-6">”楽しいこと”でつながる。</p>
         </div>
         <Image
-          className="filter invert-30 sepia saturate-400 hue-rotate-30 brightness-90 contrast-100"
+          className="filter brightness-100 hue-rotate-90 invert-30 sepia"
           src="/conceptlogo.png"
           alt="concept logo"
           width={500}
