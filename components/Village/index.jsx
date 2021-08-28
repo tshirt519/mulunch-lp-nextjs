@@ -1,4 +1,3 @@
-import styles from "../Village/Village.module.css";
 import Image from "next/image";
 import { IoIosArrowDropdown } from "react-icons/io";
 
