@@ -1,4 +1,3 @@
-import styles from "../Responsive/Header.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { GoThreeBars } from "react-icons/go";
@@ -13,10 +12,10 @@ export const Header = () => {
 
   return (
     <>
-      <header className={styles.responsive_header}>
-        <h1 className={styles.logo}>
+      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-12 shadow h-16 bg-white opacity-80 ">
+        <h1 className="hover:opacity-60">
           <Link href="/">
-            <a className={styles.a}>
+            <a>
               <Image
                 src="/mulunch_logo.png"
                 alt="mulunch logo"
@@ -27,8 +26,8 @@ export const Header = () => {
           </Link>
         </h1>
         <nav>
-          <button onClick={ShowOverlay}>
-            <GoThreeBars size={40} className={styles.barmenu} />
+          <button className="border-none bg-inherit hover:opacity-60" onClick={ShowOverlay}>
+            <GoThreeBars size={40}/>
           </button>
           <Overlay showFlag={showOverlay} setShowOverlay={setShowOverlay} />
         </nav>
@@ -37,3 +36,16 @@ export const Header = () => {
     </>
   );
 };
+
+// animationのデータ仮
+// animation: opacity 0.5s ease 0s 1 alternate none running;
+// }
+// @keyframes opacity {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+

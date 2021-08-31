@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
 import Image from "next/image";
@@ -13,11 +12,11 @@ export const Overlay = (props) => {
   return (
     <div>
       {props.showFlag ? (
-        <div className={styles.overlay} onClick={closeOverlay}>
-          <div className={styles.close_button}>
-            <h1 className={styles.logo}>
+        <div className="w-full h-full top-0 left-0 bottom-0 right-0 z-10 bg-white opacity-80" onClick={closeOverlay}>
+          <div className="flex justify-between items-center h-16 pb-12">
+            <h1 className="hover:opacity-60">
               <Link href="/">
-                <a className={styles.a}>
+                <a>
                   <Image
                     src="/mulunch_logo.png"
                     alt="mulunch logo"
@@ -27,54 +26,54 @@ export const Overlay = (props) => {
                 </a>
               </Link>
             </h1>
-            <button onClick={closeOverlay}>
-              <GoThreeBars size={40} className={styles.barmenu} />
+            <button className="hover:opacity-60" onClick={closeOverlay}>
+              <GoThreeBars size={40}/>
             </button>
           </div>
-          <nav>
+          <nav className="text-center">
             <ul>
-              <div className={styles.list_margin}></div>
-              <li className={styles.li}>
+              <div className="h-8"></div>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="concept" smooth={true} duration={1000} offset={-50}>
-                  <a className={styles.a}>CONCEPT</a>
+                  <a>CONCEPT</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="project" smooth={true} duration={1000} offset={50}>
-                  <a className={styles.a}>PROJECTS</a>
+                  <a>PROJECTS</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="topic" smooth={true} duration={1000} offset={0}>
-                  <a className={styles.a}>TOPICS</a>
+                  <a>TOPICS</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="village" smooth={true} duration={1000} offset={120}>
-                  <a className={styles.a}>VILLAGE</a>
+                  <a>VILLAGE</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="lunch" smooth={true} duration={1000} offset={0}>
-                  <a className={styles.a}>LUNCH</a>
+                  <a>LUNCH</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll
                   to="gallery"
                   smooth={true}
                   duration={1000}
                   offset={-600}
                 >
-                  <a className={styles.a}>GARLLERY</a>
+                  <a>GARLLERY</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Scroll to="join" smooth={true} duration={1000} offset={-50}>
-                  <a className={styles.a}>JOIN</a>
+                  <a>JOIN</a>
                 </Scroll>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
                   <a className={styles.join}>BLOG</a>
                 </Link>

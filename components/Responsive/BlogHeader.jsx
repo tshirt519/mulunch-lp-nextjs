@@ -1,6 +1,4 @@
-import styles from "../Responsive/Header.module.css";
 import Image from "next/image";
-import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
 import { GoThreeBars } from "react-icons/go";
 import { useState } from "react";

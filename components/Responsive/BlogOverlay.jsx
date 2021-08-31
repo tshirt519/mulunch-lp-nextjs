@@ -1,5 +1,4 @@
 import React from "react";
-import styles from "../Responsive/Header.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import { GoThreeBars } from "react-icons/go";
