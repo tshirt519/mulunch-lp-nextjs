@@ -7,7 +7,7 @@ import { Header as ReponsiveHeader } from "/components/Responsive/Header";
 export const Header = () => {
   return (
     <section className="flex justify-center">
-      <header className="h-24 w-11/12 bg-white opacity-80 rounded-xl fixed z-10 mx-auto top-10 shadow tablet:hidden">
+      <header className="fixed h-24 w-11/12 bg-white opacity-80 rounded-xl z-10 mx-auto top-10 shadow tablet:hidden">
         <nav className="h-full">
           <ul className="flex justify-around items-center w-full h-full">
             <h1 className="mt-2">
@@ -24,7 +24,7 @@ export const Header = () => {
             </h1>
             <li>
               <Scroll to="concept" smooth={true} duration={1000} offset={-50}>
-                <a className="cursor-pointer hover:opacity-40 flex">CONCEPT</a>
+                <a className="flex cursor-pointer hover:opacity-40">CONCEPT</a>
               </Scroll>
             </li>
             <li>
@@ -68,7 +68,7 @@ export const Header = () => {
         </nav>
       </header>
 
-      <ul className="flex justify-end items-center h-10 w-11/12 fixed z-10 mx-auto top-36 tablet:hidden">
+      <ul className="fixed flex justify-end items-center h-10 w-11/12 z-10 mx-auto top-36 tablet:hidden">
         <li className="flex justify-center items-center w-10 h-10 mx-1 bg-white opacity-60 rounded-full shadow hover:opacity-80">
           <Link href="https://twitter.com/muramusubi/">
             <a>
