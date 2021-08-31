@@ -23,6 +23,7 @@ module.exports = {
         75: ".75",
       },
       colors: {
+        mulunchBlue: "#CAD4E3",
         mulunchRed: "#F7EEE6",
         mulunchKhaki: "#F7F5F1",
         mulunchOrange: "#ea9044",
@@ -43,6 +44,7 @@ module.exports = {
         vlSection: "url('/village-lunch-section3.png')",
         gaSection: "url('/gallerysection-2.png')",
         gaBackground: "url('/gallerybg-3.png')",
+        jfSection: "url('/jf-section3.png')",
       }),
     },
   },
