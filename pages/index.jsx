@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
 import { Header } from "../components/Header";
 import { Footer } from "../components/Footer";
 import { Top } from "../components/Top";
@@ -14,7 +13,7 @@ import { Join } from "../components/Join";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>むらんち</title>
         <meta
@@ -24,7 +23,7 @@ export default function Home() {
         <link rel="icon" href="/mulunch_favi.ico" />
       </Head>
       <Header />
-      <main className={styles.container}>
+      <main>
         <Top />
         <Concept />
         <Project />
