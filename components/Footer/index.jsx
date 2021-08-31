@@ -1,4 +1,3 @@
-import styles from "../Footer/Footer.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";

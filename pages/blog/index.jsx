@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "/styles/Blog.module.css";
 import { BlogFooter } from "/components/Footer/BlogFooter";
 import { BlogHeader } from "/components/Header/BlogHeader";
 import Image from "next/image";
@@ -7,7 +6,7 @@ import Link from "next/link";
 
 export default function Blog() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
         <title>むらんちブログ</title>
         <meta
@@ -18,11 +17,11 @@ export default function Blog() {
       </Head>
 
       <BlogHeader />
-      <main className={styles.container}>
-        <section id="blogTop" className={styles.section}>
+      <main>
+        <section id="blogTop"  className="flex justify-center items-center pt-24 h-screen w-full">
           <article>
-            <div className={styles.article_main}>
-              <div className={styles.article_thumbnail}>
+            <div>
+              <div>
                 <Image
                   src="https://mulunchimage.s3-ap-northeast-1.amazonaws.com/posts/スナックむらむすび、始まります_1.jpg"
                   width={600}
@@ -31,22 +30,22 @@ export default function Blog() {
                 />
               </div>
 
-              <div className={styles.article_text}>
+              <div>
                 <h3>スナックむらむすび、始まります</h3>
-                <div className={styles.article_data}>
+                <div className="flex justify-start items-center">
                   <Link href="/">
-                    <a className={styles.article_category}>大鹿村</a>
+                    <a>大鹿村</a>
                   </Link>
-                  ／<p className={styles.article_timestamp}>20210816</p>
+                  ／<p>20210816</p>
                 </div>
-                <div className={styles.article_links}>
-                  <div className={styles.access_counter}>12345</div>
+                <div className="flex justify-around items-center">
+                  <div>12345</div>
                   <Link href="/">
-                    <a className={styles.article_sns_link}>T</a>
+                    <a>T</a>
                   </Link>
                   <div>
                     <Link href="/">
-                      <a className={styles.article_user_link}>
+                      <a className="flex justify-around items-center">
                         <p>むらむすびのスタッフ</p>
                         <Image
                           src="https://mulunchimage.s3-ap-northeast-1.amazonaws.com/posts/スナックむらむすび、始まります_1.jpg"
