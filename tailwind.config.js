@@ -23,6 +23,7 @@ module.exports = {
         75: ".75",
       },
       colors: {
+        mulunchRed: "#F7EEE6",
         mulunchKhaki: "#F7F5F1",
         mulunchOrange: "#ea9044",
         // default color => #de9044
@@ -40,6 +41,7 @@ module.exports = {
       backgroundImage: (theme) => ({
         topVisual: "url('/TV-6.jpg')",
         vlSection: "url('/village-lunch-section3.png')",
+        gaSection: "url('/gallerysection-2.png')",
       }),
     },
   },
