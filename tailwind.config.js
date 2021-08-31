@@ -23,6 +23,7 @@ module.exports = {
         75: ".75",
       },
       colors: {
+        mulunchBlue: "#CAD4E3",
         mulunchRed: "#F7EEE6",
         mulunchKhaki: "#F7F5F1",
         mulunchOrange: "#ea9044",
@@ -42,11 +43,38 @@ module.exports = {
         topVisual: "url('/TV-6.jpg')",
         vlSection: "url('/village-lunch-section3.png')",
         gaSection: "url('/gallerysection-2.png')",
+        gaBackground: "url('/gallerybg-3.png')",
+        jfSection: "url('/jf-section3.png')",
       }),
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      const newUtilities = {
+        ".text-shadow": {
+          textShadow: "0px 2px 3px gray",
+        },
+        ".text-shadow-md": {
+          textShadow: "0px 3px 3px gray",
+        },
+        ".text-shadow-lg": {
+          textShadow: "0px 5px 3px gray",
+        },
+        ".text-shadow-xl": {
+          textShadow: "0px 7px 3px gray",
+        },
+        ".text-shadow-2xl": {
+          textShadow: "0px 10px 3px gray",
+        },
+        ".text-shadow-none": {
+          textShadow: "none",
+        },
+      };
+
+      addUtilities(newUtilities);
+    },
+  ],
 };

@@ -1,15 +1,14 @@
-import styles from "../Join/Join.module.css";
 import Image from "next/image";
 
 export const Join = () => {
   return (
-    <section id="join" className={styles.section}>
-      <div className={styles.heading}>
-        <div>
-          <h2>JOIN</h2>
-          <p>参加してみよう！</p>
+    <section id="join" className="bg-mulunchBlue text-mulunchGray pt-6">
+      <div className="flex justify-around items-center">
+        <div className="flex justify-center items-center w-full ">
+          <h2 className="text-white text-7xl">JOIN</h2>
+          <p className="ml-12 text-xl text-bold border-b border-mulunchGray pb-1">参加してみよう！</p>
         </div>
-        <div>
+        <div className="flex justify-around items-center w-full ">
           <Image
             src="/join-right-3.png"
             alt="join description"
@@ -18,10 +17,10 @@ export const Join = () => {
           />
         </div>
       </div>
-      <div className={styles.description}>
-        <h3>「村」をむすぼう</h3>
-        <p>
-          <span className={styles.mulunch_font}>むらんち</span>
+      <div className="ml-48 -mt-40">
+        <h3 className="text-xl">「村」をむすぼう</h3>
+        <p className="mt-6">
+          <span>むらんち</span>
           では、一緒にむらをむすぶ仲間を募集しています。
         </p>
         <p>
@@ -30,7 +29,7 @@ export const Join = () => {
         <p>少しでも興味がある方はお気軽にお問い合わせくださいね！</p>
       </div>
 
-      <div className={styles.flow}>
+      <div className="mt-4 text-center">
         <Image
           src="/join-flow1.png"
           alt="join flow"
@@ -39,21 +38,21 @@ export const Join = () => {
         />
       </div>
 
-      <form className={styles.form} action="mailto:muramusubi.lunch@gmail.com" method="POST">
-        <div>
-          <input type="text" name="shimei" placeholder="お名前" />
-          <input type="email" name="email" placeholder="メールアドレス" />
+      <form className="mx-auto w-3/4" action="mailto:muramusubi.lunch@gmail.com" method="POST">
+        <div className="flex justify-between items-center mt-12">
+          <input className="shadow block w-96 h-12" type="text" name="shimei" placeholder="お名前" />
+          <input className="shadow block w-96 h-12" type="email" name="email" placeholder="メールアドレス" />
         </div>
-        <textarea
+        <textarea className="shadow block mt-12 mx-auto w-full"
           name="contact"
           cols="167"
           rows="16"
           placeholder="お問い合わせ内容"
         ></textarea>
-        <input type="submit" value="送信" />
+        <input className="shadow-md block w-96 h-12 my-12 mx-auto bg-mulunchOrange rounded-full text-white opacity-80 cursor-pointer hover:opacity-100" type="submit" value="送信" />
       </form>
 
-      <div className={styles.transition}></div>
+      <div className="h-24 w-full bg-jfSection bg-center bg-cover"></div>
     </section>
   );
 };

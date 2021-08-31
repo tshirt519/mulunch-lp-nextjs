@@ -1,4 +1,3 @@
-import styles from "./Gallery.module.css";
 import Image from "next/image";
 import { useState } from "react";
 import { IoIosArrowDropright, IoIosArrowDropleft } from "react-icons/io";
@@ -50,49 +49,49 @@ export const Gallery = ({ gallery }) => {
   };
 
   return (
-    <section id="gallery" className={styles.section}>
-      <h3>Photo Gallery</h3>
+    <section id="gallery" className="mt-48 pt-24 text-mulunchGray text-center bg-gaBackground bg-center bg-cover">
+      <h3 className="text-6xl -mt-96">Photo Gallery</h3>
       <div>
-        <ul className={styles.ul}>
-          <button className={styles.prev} onClick={prevSlide}>
+        <ul className="flex justify-center items-center mt-6 w-full">
+          <button className="mx-auto p-2 rounded-full border bg-white font-bold text-mulunchGray shadow cursor-pointer hover:opacity-40" onClick={prevSlide}>
             <IoIosArrowDropleft size={24} />
           </button>
           {pictures.map((picture, index) => (
             <li key={index}>
               {index === current && (
-                <div className={styles.ul}>
-                  <article>
+                <div className="flex justify-center items-center mt-6 w-full">
+                  <article className="mx-4 cursor-pointer hover:opacity-60">
                     <Image
                       src={picture.image1}
                       width={400}
                       height={400}
                       alt="pictures image"
                     />
-                    <p>{picture.title1}</p>
+                    <p className="absolute text-white -mt-6 mx-auto w-96 text-shadow-xl">{picture.title1}</p>
                   </article>
-                  <article>
+                  <article className="mx-4 cursor-pointer hover:opacity-60">
                     <Image
                       src={picture.image2}
                       width={400}
                       height={400}
                       alt="pictures image"
                     />
-                    <p>{picture.title2}</p>
+                    <p className="absolute text-white -mt-6 mx-auto w-96 text-shadow-xl">{picture.title2}</p>
                   </article>
-                  <article>
+                  <article className="mx-4 cursor-pointer hover:opacity-60">
                     <Image
                       src={picture.image3}
                       width={400}
                       height={400}
                       alt="pictures image"
                     />
-                    <p>{picture.title3}</p>
+                    <p className="absolute text-white -mt-6 mx-auto w-96 text-shadow-xl">{picture.title3}</p>
                   </article>
                 </div>
               )}
             </li>
           ))}
-          <button className={styles.next} onClick={nextSlide}>
+          <button className="mx-auto p-2 rounded-full border bg-white font-bold text-mulunchGray shadow cursor-pointer hover:opacity-40" onClick={nextSlide}>
             <IoIosArrowDropright size={24} />
           </button>
         </ul>
