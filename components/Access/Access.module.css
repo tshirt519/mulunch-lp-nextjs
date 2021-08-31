@@ -1,32 +1,6 @@
-.section {
-  background-color: #f7eee6;
-  padding: 100px 0 0;
-  color: #6e6d6e;
-}
-.access {
-  display: flex;
-  justify-content: space-evenly;
-  border: 5px solid #fff;
-  margin: 100px;
-  padding: 100px 0 50px;
-}
-.access_left {
-  margin: 200px 0 0;
-}
-.access_left div {
-  margin: 50px 0 0 0;
-}
-.access_image {
-  height: 300px;
-  width: 400px;
-  margin: -300px 0 0 0;
-}
-.access_image iframe {
-  margin: 50px 0;
-  width: 450px;
-  height: 300px;
-}
-.section h3 {
+/* after要素tailwindで利用可か要検討 */
+
+.h2 {
   font-size: 60px;
   width: 400px;
   height: 100px;
@@ -38,9 +12,9 @@
   font-weight: normal;
   border-radius: 50px;
   position: relative;
-  margin-top: -350px;
+  margin-top: -325px;
 }
-.section h3::after {
+.h2::after {
   content: "";
   position: absolute;
   right: 0;
@@ -53,28 +27,7 @@
   border-color: #de9044 transparent transparent transparent;
   border-width: 20px 20px 0 20px;
 }
-.section h3 svg {
+.h2 svg {
   filter: brightness(0) invert(1);
   margin-right: 10px;
-}
-.info {
-  padding: 10px 50px 20px;
-  border-left: 2px solid #6e6d6e;
-  border-right: 2px solid #6e6d6e;
-  border-radius: 10px;
-}
-.info p {
-  width: 100px;
-  text-align: center;
-  background-color: #6e6d6e;
-  color: #fff;
-  padding: 5px 10px;
-  margin: 0 0 20px 0;
-}
-.transition {
-  height: 200px;
-  width: 100%;
-  background-image: url(/gallerysection-2.png);
-  background-position: center center;
-  background-size: cover;
 }

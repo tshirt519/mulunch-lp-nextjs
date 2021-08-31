@@ -1,9 +1,8 @@
-import styles from "../Lunch/Lunch.module.css";
 import Image from "next/image";
 
 export const Lunch = () => {
   return (
-    <section id="lunch" className={styles.section}>
+    <section id="lunch" className="bg-mulunchRed text-center">
       <div>
         <Image
           src="/lunchbg-4.png"
