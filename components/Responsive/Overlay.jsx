@@ -10,9 +10,9 @@ export const Overlay = (props) => {
     console.log("test2");
   };
   return (
-    <div>
+    <div className="w-full h-full top-0 left-0 bottom-0 right-0 z-10 bg-white opacity-80" onClick={closeOverlay}>
       {props.showFlag ? (
-        <div className="w-full h-full top-0 left-0 bottom-0 right-0 z-10 bg-white opacity-80" onClick={closeOverlay}>
+        <div>
           <div className="flex justify-between items-center h-16 pb-12">
             <h1 className="hover:opacity-60">
               <Link href="/">
@@ -75,7 +75,7 @@ export const Overlay = (props) => {
               </li>
               <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.join}>BLOG</a>
+                  <a>BLOG</a>
                 </Link>
               </li>
             </ul>

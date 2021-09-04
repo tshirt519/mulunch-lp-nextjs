@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Link as Scroll } from "react-scroll";
+import Link from "next/link";
 import { GoThreeBars } from "react-icons/go";
 import { useState } from "react";
 import { BlogOverlay } from "./BlogOverlay";
@@ -12,10 +12,10 @@ export const BlogHeader = () => {
 
   return (
     <>
-      <header className={styles.responsive_header}>
-        <h1 className={styles.logo}>
-          <Scroll to="blogTop" smooth={true} >
-            <a className={styles.a}>
+      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-12 shadow w-full h-16 bg-white opacity-80 tablet:flex">
+        <h1 className="mt-2 hover:opacity-60">
+          <Link href="/">
+            <a>
               <Image
                 src="/mulunch_logo.png"
                 alt="mulunch logo"
@@ -23,11 +23,11 @@ export const BlogHeader = () => {
                 height={40}
               />
             </a>
-          </Scroll>
+          </Link>
         </h1>
         <nav>
-          <button onClick={ShowOverlay}>
-            <GoThreeBars size={40} className={styles.barmenu} />
+          <button className="border-none bg-inherit hover:opacity-60" onClick={ShowOverlay}>
+            <GoThreeBars size={40}/>
           </button>
           <BlogOverlay showFlag={showOverlay} setShowOverlay={setShowOverlay} />
         </nav>
@@ -36,3 +36,16 @@ export const BlogHeader = () => {
     </>
   );
 };
+
+// animationのデータ仮
+// animation: opacity 0.5s ease 0s 1 alternate none running;
+// }
+// @keyframes opacity {
+//   0% {
+//     opacity: 0;
+//   }
+//   100% {
+//     opacity: 1;
+//   }
+// }
+

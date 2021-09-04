@@ -11,11 +11,14 @@ export const BlogOverlay = (props) => {
   return (
     <div>
       {props.showFlag ? (
-        <div className={styles.overlay} onClick={closeOverlay}>
-          <div className={styles.close_button}>
-            <h1 className={styles.logo}>
-              <Link href="/blog">
-                <a className={styles.a}>
+        <div
+          className="w-full h-full top-0 left-0 bottom-0 right-0 z-10 bg-white opacity-80"
+          onClick={closeOverlay}
+        >
+          <div className="flex justify-between items-center h-16 pb-12">
+            <h1 className="hover:opacity-60">
+              <Link href="/">
+                <a>
                   <Image
                     src="/mulunch_logo.png"
                     alt="mulunch logo"
@@ -25,50 +28,51 @@ export const BlogOverlay = (props) => {
                 </a>
               </Link>
             </h1>
-            <button onClick={closeOverlay}>
-              <GoThreeBars size={40} className={styles.barmenu} />
+            <button className="hover:opacity-60" onClick={closeOverlay}>
+              <GoThreeBars size={40} />
             </button>
           </div>
-          <nav>
+          <nav className="text-center">
             <ul>
-              <li className={styles.li}>
+              <div className="h-8"></div>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>投稿一覧</a>
+                  <a>投稿一覧</a>
                 </Link>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>むらむすび</a>
+                  <a>むらむすび</a>
                 </Link>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>全国の村</a>
+                  <a>全国の村</a>
                 </Link>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>上野村</a>
+                  <a>上野村</a>
                 </Link>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>大鹿村</a>
+                  <a>大鹿村</a>
                 </Link>
               </li>
-              <li className={styles.li}>
-                <Link href="/blog">
-                  <a className={styles.a}>東成瀬村</a>
+              <li className="m-8 text-xl hover:opacity-60">
+                <Link>
+                  <a>東成瀬村</a>
                 </Link>
               </li>
-              <li className={styles.li}>
+              <li className="m-8 text-xl hover:opacity-60">
                 <Link href="/blog">
-                  <a className={styles.a}>タグ一覧</a>
+                  <a>タグ一覧</a>
                 </Link>
               </li>
-              <li className={styles.li}>
-                <Link href="/blog">
-                  <a className={styles.join}>HOME</a>
+              <li className="m-8 text-xl hover:opacity-60">
+                <Link href="/">
+                  <a>HOME</a>
                 </Link>
               </li>
             </ul>
