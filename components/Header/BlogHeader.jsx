@@ -15,8 +15,8 @@ export const BlogHeader = () => {
                 <Image
                   src="/mulunch_logo.png"
                   alt="mulunch logo"
-                  width={180}
-                  height={90}
+                  width={120}
+                  height={60}
                 />
               </Scroll>
             </h1>
