@@ -12,22 +12,22 @@ export const Header = () => {
 
   return (
     <>
-      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-12 shadow w-full h-16 bg-white opacity-80 tablet:flex">
+      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-12 shadow w-full h-32 bg-white opacity-80 tablet:flex">
         <h1 className="mt-2 hover:opacity-60">
           <Link href="/">
             <a>
               <Image
                 src="/mulunch_logo.png"
                 alt="mulunch logo"
-                width={80}
-                height={40}
+                width={120}
+                height={60}
               />
             </a>
           </Link>
         </h1>
         <nav>
-          <button className="border-none bg-inherit hover:opacity-60" onClick={ShowOverlay}>
-            <GoThreeBars size={40}/>
+          <button className="border-none mt-1 bg-inherit hover:opacity-60" onClick={ShowOverlay}>
+            <GoThreeBars size={60}/>
           </button>
           <Overlay showFlag={showOverlay} setShowOverlay={setShowOverlay} />
         </nav>
