@@ -6,8 +6,8 @@ import { Header as ReponsiveHeader } from "/components/Responsive/Header";
 
 export const Header = () => {
   return (
-    <section className="flex justify-center">
-      <header className="fixed h-24 w-11/12 bg-white opacity-80 rounded-xl z-10 mx-auto top-10 shadow tablet:hidden">
+    <section className="w-full">
+      <header className="fixed h-24 w-11/12 bg-white opacity-80 rounded-xl z-10 mx-auto top-10 left-16 shadow tablet:hidden">
         <nav className="h-full">
           <ul className="flex justify-around items-center w-full h-full">
             <h1 className="mt-2">
