@@ -12,22 +12,22 @@ export const BlogHeader = () => {
 
   return (
     <>
-      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-12 shadow w-full h-32 bg-white opacity-80 tablet:flex">
+      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-16 shadow w-full h-16 bg-white opacity-80 tablet:flex sp:h-32">
         <h1 className="mt-2 hover:opacity-60">
           <Link href="/">
             <a>
               <Image
                 src="/mulunch_logo.png"
                 alt="mulunch logo"
-                width={120}
-                height={60}
+                width={100}
+                height={50}
               />
             </a>
           </Link>
         </h1>
         <nav>
           <button className="border-none mt-1 bg-inherit hover:opacity-60" onClick={ShowOverlay}>
-            <GoThreeBars size={60}/>
+            <GoThreeBars size={50}/>
           </button>
           <BlogOverlay showFlag={showOverlay} setShowOverlay={setShowOverlay} />
         </nav>
