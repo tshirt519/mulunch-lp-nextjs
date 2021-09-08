@@ -3,7 +3,7 @@ import { IoIosArrowDropdown } from "react-icons/io";
 
 export const Top = () => {
   return (
-    <section id="top" className="relative min-h-overScreen bg-topVisual bg-cover bg-center tablet:mt-24">
+    <section id="top" className="relative min-h-overScreen bg-topVisual bg-cover bg-center tablet:mt-24 sp:min-h-spScreen">
       <div className="absolute flex justify-center w-full top-3/4 z-10 text-white text-center cursor-pointer animate-bounce hover:opacity-40">
         <Scroll to="concept" smooth={true} duration={1000} offset={-50}>
           <div>
