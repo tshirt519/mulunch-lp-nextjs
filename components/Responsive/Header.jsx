@@ -12,7 +12,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-16 shadow w-full h-24 bg-white opacity-80 tablet:flex">
+      <header className="hidden justify-between items-center fixed z-10 top-0 left-0 px-16 shadow w-full h-48 bg-white opacity-80 tablet:flex">
         <h1 className="mt-2 hover:opacity-60">
           <Link href="/">
             <a>

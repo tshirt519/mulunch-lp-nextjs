@@ -12,7 +12,7 @@ module.exports = {
       "3/4": "75%",
       full: "100%",
       overScreen: "115vh",
-      spScreen: "120vh",
+      spScreen: "300vh",
 
     },
     extend: {
