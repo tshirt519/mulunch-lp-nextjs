@@ -8,7 +8,7 @@ export const Top = () => {
         <Scroll to="concept" smooth={true} duration={1000} offset={-50}>
           <div>
             <p className="animate-pulse">SCROLL</p>
-            <IoIosArrowDropdown className="mx-auto animate-pulse" /> 
+            <IoIosArrowDropdown className="mx-auto animate-pulse" />
           </div>
         </Scroll>
       </div>
