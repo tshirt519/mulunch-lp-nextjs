@@ -12,7 +12,7 @@ module.exports = {
       "3/4": "75%",
       full: "100%",
       overScreen: "115vh",
-      spScreen: "1920px",
+      spScreen: "3840px",
 
     },
     extend: {
